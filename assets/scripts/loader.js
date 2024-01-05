@@ -48,7 +48,7 @@ else {
           clearInterval(id);
           i = 0;
           loaderslider.classList.add('loader-slider-animation');
-          descktoploader.classList.add('hide-loader');
+          descktoploader.classList.add('hide-desktop-loader');
           
 
         } else {

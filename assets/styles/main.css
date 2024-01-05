@@ -3007,7 +3007,7 @@ input{
     margin-top: -12.4vw;
     margin-left: -17vw;
 }
-.desktop-loader.hide-loader{
+.desktop-loader.hide-desktop-loader{
     opacity: 0;
     z-index: -999;
     transition-delay: 1s;
