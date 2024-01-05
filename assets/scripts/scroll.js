@@ -28,7 +28,7 @@ SmoothScroll({
       $('a[href*="#"]').click(function() {
           $page.animate({
               scrollTop: $($.attr(this, 'href')).offset().top
-          }, 4500);
+          }, 1500);
           return false;
       });
       

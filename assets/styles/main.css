@@ -2952,3 +2952,99 @@ input{
     text-transform: uppercase;
     opacity: 0.4;
 }
+/**/
+.desktop-loader{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: var(--Green-G150, #304040);
+    z-index: 999;
+    opacity: 1;
+}
+.desktop-loader-content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.descktop-loader-top-block{
+    padding: 0 2.9166666666666665vw;
+    padding-top: 1.3020833333333333vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.desktop-loader-progress-bar{
+    position: absolute;
+    width: 15%;
+    bottom: 0;
+    height: 6.458333333333333vw;
+    flex-shrink: 0;
+    background: #BA9875;  
+}
+.desktop-loader-counter{
+    color: #304040;
+    font-feature-settings: 'ss03' on;
+    font-family: 'Radikal', sans-serif;
+    font-size: 3.75vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 3.75vw; /* 100% */
+    letter-spacing: -0.893px;
+    text-transform: uppercase;  
+    position: absolute;
+    top: 1.3541666666666667vw;
+    right: 1.6666666666666667vw;  
+}
+.loader-lines{
+    width: 35.208333333333336vw;
+    height: 24.895833333333332vw;
+    flex-shrink: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -12.4vw;
+    margin-left: -17vw;
+}
+.desktop-loader.hide-loader{
+    opacity: 0;
+    z-index: -999;
+    transition-delay: 1s;
+    transition: 3s ease;
+}
+.loader-slider{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 41.458333333333336vw;
+    height: 21.1875vw;
+    margin-top: -10.5vw;
+    margin-left: -20.5vw;
+    flex-shrink: 0;    
+}
+.loader-slider-animation{
+    transform: scale(2.25);
+    transition: .25s ease;
+}
+.destroy-slider{
+    display: none;
+}
+.loader-slide-item-1{
+    background: url('../images/architecture/slide-1.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.loader-slide-item-2{
+    background: url('../images/architecture/slide-2.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+.loader-slide-item-3{
+    background: url('../images/architecture/slide-3.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

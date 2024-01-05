@@ -7,6 +7,8 @@ document.addEventListener('scroll', ()=>{
     console.log(aboutblockheight);
 })
 */
+const viewvalue = document.documentElement.clientWidth;
+if (viewvalue > 960){
 function animation(entry) {
     entry.forEach(change => {
       if (change.isIntersecting) {
@@ -52,4 +54,27 @@ for (let n = 0; n < infrabtn.length; n++){
   infrabtn[n].addEventListener('mouseout', () => {
     infratxt[n].classList.remove('show-slide-txt')
   })
+}
+}
+else {
+  let mobileimgpointer = document.querySelectorAll('.mobile-img-pointer');
+  let mobiledescriptiontxt = document.querySelectorAll('.about-mobile-description-block');
+  let mobiledescriptionclosebtn = document.querySelectorAll('.about-mobile-description-close-btn');
+  for (let i=0; i<mobileimgpointer.length; i++){
+    mobileimgpointer[i].addEventListener('click', () => {
+      mobileimgpointer[i].classList.add('open-mobile-description');
+      mobiledescriptiontxt[i].classList.add('show-mobile-description');
+      for (let n=0; n<mobileimgpointer.length; n++){
+        if (i!=n){
+          mobiledescriptiontxt[n].classList.remove('show-mobile-description');
+        }
+      }
+    })
+    
+    mobiledescriptionclosebtn[i].addEventListener('click', () => {
+      mobiledescriptiontxt[i].classList.remove('show-mobile-description');
+      mobileimgpointer[i].classList.remove('open-mobile-description');
+
+    })
+  }
 }
